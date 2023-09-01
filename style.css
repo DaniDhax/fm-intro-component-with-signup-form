@@ -1,23 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
   /* COLOR *
   /* Primary */
   --my-red: hsl(0, 100%, 74%);
   --my-green: hsl(154, 59%, 51%);
-  
+
   /* Accent */
   --my-blue: hsl(248, 32%, 49%);
 
   /* Neutral */
   --dark-blue: hsl(249, 10%, 26%);
   --grayish-blue: hsl(246, 25%, 77%);
-  
-  
+
   /* FONTS */
   --ff-poppins: "Poppins", sans-serif;
 }
-
 
 * {
   margin: 0;
@@ -31,111 +29,123 @@ html {
 }
 
 body {
-    background: url(./images/bg-intro-mobile.png);
-    background-color: var(--my-red);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 5%;
+  background: url(./images/bg-intro-mobile.png);
+  background-color: var(--my-red);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5%;
 }
 
 #section-one h1 {
-    color: white;
-    font-weight: 700;
-    font-size: 3rem;
-    margin: 20px;
-    line-height: 3.5rem;
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 20px;
+  line-height: 3.5rem;
 }
 
 #section-one p {
-    color: white;
-    font-weight: 400;
-    font-size: 1.7rem;
-    margin: 15px 0 60px 0;
+  color: white;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin: 15px 0 60px 0;
 }
 
 .bg-blue {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 600;
-    background-color: var(--my-blue);
-    border-radius: 10px;
-    padding: 20px 60px;
-    margin-bottom: 25px;
-    box-shadow: 0px 10px 0px -1px hsla(0, 0%, 0%, 0.15);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: var(--my-blue);
+  border-radius: 10px;
+  padding: 20px 60px;
+  margin-bottom: 25px;
+  box-shadow: 0px 10px 0px -1px hsla(0, 0%, 0%, 0.15);
 }
 
 .bg-blue span {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 #section-two {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #formulario {
-    background-color: white;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    padding: 15px 0;
-    box-shadow: 0px 10px 0px -1px hsla(0, 0%, 0%, 0.15);
-    margin-bottom: 50px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  box-shadow: 0px 10px 0px -1px hsla(0, 0%, 0%, 0.15);
+  margin-bottom: 50px;
 }
 
 #formulario input {
-    margin: 10px 20px;
-    padding: 15px;
-    font-weight: 600;
-    font-family: var(--ff-poppins);
-    border: 1px solid var(--grayish-blue);
-    border-radius: 5px;
+  margin: 10px 20px;
+  padding: 15px 25px;
+  font-weight: 600;
+  font-family: var(--ff-poppins);
+  border: 1px solid var(--grayish-blue);
+  border-radius: 5px;
+  outline-color: var(--grayish-blue);
 }
 
 #btn-submit {
-    background-color: var(--my-green);
-    color: white;
-    letter-spacing: 0.2rem;
-    border: none !important;
-    box-shadow: 0px 5px 0px -1px rgb(66 176 129);
+  background-color: var(--my-green);
+  color: white;
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+  border: none !important;
+  box-shadow: 0px 5px 0px 0px rgb(66 176 129);
+}
+
+#btn-submit:hover {
+    background-color: rgb(119, 225, 179);
+    box-shadow: 0px 5px 0px 0px rgb(119, 199, 162);
 }
 
 #formulario p {
-    font-size: 1.25rem;
-    color: var(--grayish-blue);
-    margin: 5px 30px;
+  font-size: 1.25rem;
+  color: var(--grayish-blue);
+  margin: 5px 30px;
 }
 
-#formulario p span {
-    color: var(--my-red);
-    font-weight: 700;
+#formulario p a {
+    text-decoration: none;
+  color: var(--my-red);
+  font-weight: 700;
+  cursor: pointer;
 }
+
 
 @media (min-width: 900px) {
+  body {
+    flex-direction: row;
+  }
 
-    body {
-        flex-direction: row;
-    }
+  #section-one {
+    width: 50%;
+    padding: 0 25px;
+    text-align: left;
+  }
 
-    #section-one {
-        width: 50%;
-        padding: 0 25px;
-        text-align: left;
-    }
+  #section-one h1 {
+    margin: unset;
+  }
 
-    #section-one h1 {
-        margin: unset;
-    }
+  #section-one p {
+    font-size: 1.2rem;
+  }
 
-    #section-one p {
-        font-size: 1.2rem;
-    }
+  #section-two {
+    width: 50%;
+  }
 
-    #section-two {
-        width: 50%;
-    }
-
+  #formulario p {
+    margin-bottom: 30px;
+  }
 }
