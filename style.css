@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  /* COLOR *
+  /* Primary */
+  --my-red: hsl(0, 100%, 74%);
+  --my-green: hsl(154, 59%, 51%);
+  
+  /* Accent */
+  --my-blue: hsl(248, 32%, 49%);
+
+  /* Neutral */
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+  
+  
+  /* FONTS */
+  --ff-poppins: "Poppins", sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--ff-poppins);
+}
+
+body {
+    background: url(./images/bg-intro-mobile.png);
+    background-color: var(--my-red);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5%;
+}
+
+#section-one h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 20px;
+}
+
+#section-one p {
+    color: white;
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin: 15px 0 60px 0;
+}
+
+.bg-blue {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: var(--my-blue);
+    border-radius: 10px;
+    padding: 20px 60px;
+    margin-bottom: 25px;
+    box-shadow: 0px 10px 0px -1px hsla(0, 0%, 0%, 0.15);
+}
+
+.bg-blue span {
+    font-weight: 400;
+}
+
+#section-two {
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    box-shadow: 0px 10px 0px -1px hsla(0, 0%, 0%, 0.15);
+    margin-bottom: 50px;
+}
+
+#formulario input {
+    margin: 10px 20px;
+    padding: 15px;
+    font-weight: 600;
+    font-family: var(--ff-poppins);
+    border: 1px solid var(--grayish-blue);
+    border-radius: 5px;
+}
+
+#btn-submit {
+    background-color: var(--my-green);
+    color: white;
+    letter-spacing: 0.2rem;
+    border: none !important;
+    box-shadow: 0px 5px 0px -1px rgb(66 176 129);
+}
+
+#formulario p {
+    font-size: 1.25rem;
+    color: var(--grayish-blue);
+    margin: 5px 30px;
+}
+
+#formulario p span {
+    color: var(--my-red);
+    font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+
+
+
+
+
+}
