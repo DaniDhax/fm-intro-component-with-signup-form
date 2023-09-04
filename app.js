@@ -1,5 +1,6 @@
 const $btnSumit = document.querySelector("#btn-submit");
 const $camposFormulario = document.querySelectorAll(".campo");
+const $customAlert = document.getElementById("custom-alert");
 
 let regex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 let formularioCorrecto = true;
@@ -32,10 +33,14 @@ $btnSumit.addEventListener("click", (e) => {
     document.getElementById(`message-email`).innerText =
       "Looks like this is not an email";
     formularioCorrecto = false;
-  } 
-
-  if (formularioCorrecto) {
-    console.log ("Formulario correcto");
   }
 
+  if (formularioCorrecto) {
+    console.log("Formulario correcto");
+    $customAlert.style.display = "block";
+  }
 });
+
+function closeCustomAlert() {
+  $customAlert.style.display = "none";
+}
