@@ -23,26 +23,42 @@
     </section>
 
     <section id="section-two">
-      <p class="bg-blue">Try it free 7 days <span>then $20/mo. thereafter</span></p> 
+      <p class="bg-blue">
+        Try it free 7 days <span>then $20/mo. thereafter</span>
+      </p>
 
       <form id="formulario" action="procesar.php" method="post">
-        <input type="text" id="first_name" name="first_name" placeholder="First Name">
-        <input type="text" id="last_name" name="last_name" placeholder="Last Name">
-        <input type="email" id="email" name="email" placeholder="Email Address">
-        <input type="password" id="password" name="password" placeholder="Password">
-        <input type="submit" value="CLAIM YOUR FREE TRIAL" id="btn-submit">
-        <p class="disclaimer">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p> 
-      </form>
+        <div>
+          <input type="text" class="campo" id="first_name" name="first_name" placeholder="First Name"/>
+          <img src="./images/icon-error.svg" alt="icon-error" class="icon-error" id="icon-first_name">
+          <p class="message-error" id="message-first_name" >First Name cannot be empty</p>
+        </div>
 
+        <div>
+          <input type="text" class="campo" id="last_name" name="last_name" placeholder="Last Name"/>
+          <img src="./images/icon-error.svg" alt="icon-error" class="icon-error" id="icon-last_name">
+          <p class="message-error" id="message-last_name" >Last Name cannot be empty</p>
+        </div>
+
+        <div>
+          <input type="email" class="campo" id="email" name="email" placeholder="Email Address"/>
+          <img src="./images/icon-error.svg" alt="icon-error" class="icon-error" id="icon-email">
+          <p class="message-error" id="message-email" >Email cannot be empty</p>
+        </div>
+
+        <div>
+          <input type="password" class="campo" id="password" name="password" placeholder="Password"/>
+          <img src="./images/icon-error.svg" alt="icon-error" class="icon-error" id="icon-password">
+          <p class="message-error" id="message-password" >Password cannot be empty</p>
+        </div>
+        <input type="submit" value="CLAIM YOUR FREE TRIAL" id="btn-submit" />
+        <p class="disclaimer">
+          By clicking the button, you are agreeing to our
+          <a href="#">Terms and Services</a>
+        </p>
+      </form>
     </section>
 
-    <div id="custom-alert" class="custom-alert">
-      <div class="custom-alert-content">
-          <p>Este es un mensaje de alerta personalizado.</p>
-          <button onclick="closeCustomAlert()">Close</button>
-      </div>
-  </div>
-  
     <script src="app.js"></script>
   </body>
 </html>
